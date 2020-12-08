@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Function" parallel="tests" thread-count="5">
+<listeners>
+<listener class-name="Run.Ilisteners"></listener>
+</listeners>
+<test name="Adhoc">
+<parameter name="browser" value="Chrome"></parameter>
+<parameter name="URI" value="https://www.facebook.com"></parameter>
+<!--<groups>
+<run>
+			<include name="Smoke"></include>
+			<include name="Regression"></include>
+			<exclude name="Adhoc"></exclude>
+</run>
+</groups>-->
+<classes>
+<class name="Run.Shots"></class>
+<!--  <class name="Run.NewFunctionAccount"></class> -->
+</classes>
+</test>
+<!--  <test name="Different">
+<parameter name="browser" value="firefox"></parameter>
+<parameter name="URI" value="https://www.facebook.com"></parameter>
+<classes>
+<class name="Run.Functions"></class>
+<class name="Run.NewFunctionAccount"></class>
+</classes>
+</test> -->
+</suite>
+
+
+
+
+
+
